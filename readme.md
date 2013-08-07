@@ -16,11 +16,11 @@ Simple. Just add the link to the image URL and separate the two with a pipe (thi
 Three images, none with links.
 
 ```
-http://domain.com/image1.jpg,http://domain.com/image2.jpg,http://domain.com/image3.jpg
+[imagerow images="http://domain.com/image1.jpg,http://domain.com/image2.jpg,http://domain.com/image3.jpg"]
 ```
 
 Two images, one which links to Google and the other without a link.
 
 ```
-http://domain.com/image1.jpg|http://google.com,http://domain.com/image2.jpg
+[imagerow images="http://domain.com/image1.jpg|http://google.com,http://domain.com/image2.jpg"]
 ```
