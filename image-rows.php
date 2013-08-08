@@ -8,15 +8,11 @@
  * Author URI: http://pmgarman.me
  * Text Domain: image-rows
  * Domain Path: /languages/
- * License: GPLv2
+ * License: GPLv3
  */
 
 /**
  * Copyright 2013  Patrick Garman  (email: contact@pmgarman.me)
- *
- * Credit: Settings API from mattyza & pmgarman
- * https://twitter.com/mattyza
- * https://twitter.com/pmgarman
  *
  * Built using the Plugin Jump Starter!
  * https://github.com/pmgarman/plugin-jump-starter
