@@ -25,7 +25,8 @@ class Image_Rows {
 
 	function shortcode_imagerow( $atts ) {
 		extract( shortcode_atts( array(
-			'images' => ''
+			'images' => '',
+			'caption' => ''
 		), $atts ) );
 
 		// No need to continue if no images are included
@@ -47,18 +48,18 @@ class Image_Rows {
 		// HTML
 		ob_start();
 		?>
-		<div class="image-row image-row-cols-<?php echo count( $i ); ?>">
+		<figure class="image-row image-row-cols-<?php echo count( $i ); ?> clear">
 			<?php foreach( $i as $image ): $img = '<img src="' . $image['src'] . '" />'; ?>
-			<div class="image-row-image">
 				<?php if( $image['href'] ): ?>
 					<a href="<?php echo $image['href']; ?>"><?php echo $img; ?></a>
 				<?php else: ?>
 					<?php echo $img; ?>
 				<?php endif; ?>
-			</div>
 			<?php endforeach; ?>
-		</div>
-		<div class="clear"></div>
+			<?php if( !empty( $caption ) ): ?>
+				<figcaption class="clear"><?php echo $caption; ?></figcaption>
+			<?php endif; ?>
+		</figure>
 		<?php
 		return ob_get_clean();
 	}
