@@ -3,7 +3,7 @@
  * Plugin Name: Image Rows
  * Plugin URI: http://pmgarman.me
  * Description: Generate rows of images using shortcodes.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Patrick Garman
  * Author URI: http://pmgarman.me
  * Text Domain: image-rows

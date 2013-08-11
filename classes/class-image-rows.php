@@ -51,9 +51,9 @@ class Image_Rows {
 		<figure class="image-row image-row-cols-<?php echo count( $i ); ?> clear">
 			<?php foreach( $i as $image ): $img = '<img src="' . $image['src'] . '" />'; ?>
 				<?php if( $image['href'] ): ?>
-					<a href="<?php echo $image['href']; ?>"><?php echo $img; ?></a>
+					<a class="image" href="<?php echo $image['href']; ?>"><?php echo $img; ?></a>
 				<?php else: ?>
-					<?php echo $img; ?>
+					<?php echo '<img class="image" src="' . $image['src'] . '" />' ?>
 				<?php endif; ?>
 			<?php endforeach; ?>
 			<?php if( !empty( $caption ) ): ?>
